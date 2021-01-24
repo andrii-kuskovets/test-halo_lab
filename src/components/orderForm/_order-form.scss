@@ -1,0 +1,75 @@
+@import '../../assets/scss/base/_variables.scss';
+.form {
+  &__group {
+    width: 82%;
+    margin: 0 auto 16px;
+
+    &_error {
+      .form__input {
+        border-color: $error;
+      }
+
+      .form__message-error {
+        display: block;
+      }
+
+      .form__notification-error {
+        display: block;
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    font-size: 16px;
+    color: $dark;
+    padding: 16px;
+    display: block;
+    margin: 0 auto;
+
+    &::placeholder {
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__message-error {
+    display: none;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: $error;
+    text-align: left;
+  }
+
+  &__notification-error {
+    display: none;
+    text-align: left;
+  }
+
+  &__icon-error {
+    width: 24px;
+    height: 24px;
+    background-color: $error;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      path {
+        stroke: $light;
+      }
+    }
+  }
+
+  &__title-error {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: $dark;
+  }
+}

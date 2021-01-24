@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+
+}
+.app {
+  min-height: 100vh;
+  padding: 80px 110px;
+
+  @media (max-width: 1200px) {
+    padding: 60px 50px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 10px;
+  }
+}
+
+.board{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

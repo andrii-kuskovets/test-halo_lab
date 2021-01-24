@@ -1,0 +1,25 @@
+@keyframes skew {
+	16% {
+		transform: skew(-12deg);
+	}
+
+	33% {
+        transform: skew(10deg);
+	}
+
+	49% {
+        transform: skew(-6deg);
+	}
+
+	66% {
+        transform: skew(4deg);
+	}
+
+	83% {
+        transform: skew(-2deg);
+	}
+
+	100% {
+		transform: skew(0);
+	}
+}
